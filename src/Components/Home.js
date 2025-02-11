@@ -1,7 +1,7 @@
 import React from 'react'
 import './Home.css'
 import img1 from './Assets/profile.jpg'
-import propilePic from './Assets/Myprofile.jpg'
+import propilePic from './Assets/profile2.avif'
 import html from './Assets/html.png'
 import css from './Assets/css.png'
 import bootstrap from './Assets/bootstrap.jpg'
