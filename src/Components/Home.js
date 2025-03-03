@@ -1,7 +1,7 @@
 import React from 'react'
 import './Home.css'
 import img1 from './Assets/profile.jpg'
-import propilePic from './Assets/profile2.avif'
+import propilePic from './Assets/Myprofile.jpg'
 import html from './Assets/html.png'
 import css from './Assets/css.png'
 import bootstrap from './Assets/bootstrap.jpg'
@@ -23,9 +23,15 @@ const Home = () => {
     <div className='homesection'>
       <div className='details'>
         <div className='leftdetails'>
-            <p>Hi, my name is</p>
+        <div className='myimg'>
+                <img src={propilePic} alt='mtimage' width={50} height={50}/>
+            </div>
+        </div>
+        <div className='rightdetails'>
+        <p>Hi, my name is</p>
             <h1 style={{fontSize:'55px'}}>Shruti Kamble</h1>
-            <p>A Full Stack Developer focused on learning new technologies and building effective solutions.</p>
+            <p>I am a <span style={{color:'#FF4081', fontWeight:'bold'}}>Full Stack Developer.</span></p>
+            <p>I am curious and hardworking, always eager to learn and take on new challenges. I strive to deliver my best work and achieve meaningful results. With a positive attitude, I look forward to growing and making valuable contributions.</p>
             <div className='smicons'>
                 <a href="https://www.linkedin.com/in/shruti-kamble-5b9733225/" class="fa">&#xf09a;</a>
                 <a href="https://www.linkedin.com/in/shruti-kamble-5b9733225/" class="fa fa-linkedin"></a>
@@ -33,29 +39,36 @@ const Home = () => {
             </div>
             <button>Download CV</button>
         </div>
-        <div className='rightdetails'>
-            <div className='myimg'>
-                <img src={propilePic} alt='mtimage' width={50} height={50}/>
-            </div>
-        </div>
       </div>
       <div className='technicalSkills'>
         <h1>Technical Skills</h1>
         <div className='techskill'>
-            <div>
-                <img src={html} alt='image1' width={50} height={50}/>
-                <img src={css} alt='image1' width={50} height={50}/>
-                <img src={bootstrap} alt='image1' width={50} height={50}/>
-                <img src={js} alt='image1' width={50} height={50}/>
-                <img src={java} alt='image1' width={50} height={50}/>
-                <img src={firebase} alt='firebase' width={50} height={50}/>
+            <div style={{display:'flex'}}>
+                <div className='techskillsDiv' >
+                <img src={html} alt='image1' width={50} height={50}/>HTML
+                </div>
+                <div  className='techskillsDiv'>
+                  <img src={css} alt='image1' width={50} height={50}/>CSS</div>
+                <div  className='techskillsDiv'>
+                  <img src={bootstrap} alt='image1' width={50} height={50}/>Bootstrap</div>
+                <div  className='techskillsDiv'>
+                  <img src={js} alt='image1' width={50} height={50}/>Javascript</div>
+                <div  className='techskillsDiv'>
+                  <img src={java} alt='image1' width={50} height={50}/>Java</div>
+                <div  className='techskillsDiv'>
+                  <img src={firebase} alt='firebase' width={50} height={50}/>Firebase</div>
             </div>
-            <div>
-                <img src={mongodb} alt='image1' width={50} height={50}/>
-                <img src={vscode} alt='image1' width={50} height={50}/>
-                <img src={reactjs} alt='image1' width={50} height={50}/>
-                <img src={github} alt='image1' width={50} height={50}/>
-                <img src={cloudinary} alt='cloudinary' width={50} height={50}/>
+            <div style={{display:'flex'}}>
+                <div  className='techskillsDiv'>
+                  <img src={mongodb} alt='image1' width={50} height={50}/>MongoDB</div>
+                <div   className='techskillsDiv'>
+                  <img src={vscode} alt='image1' width={50} height={50}/>VS Code</div>
+                <div  className='techskillsDiv'>
+                  <img src={reactjs} alt='image1' width={50} height={50}/>React JS</div>
+                <div  className='techskillsDiv'>
+                  <img src={github} alt='image1' width={50} height={50}/>Github</div>
+                <div  className='techskillsDiv'>
+                  <img src={cloudinary} alt='cloudinary' width={50} height={50}/>Cloudinary</div>
             </div>
         </div>
       </div>

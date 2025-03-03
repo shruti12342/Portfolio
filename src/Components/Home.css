@@ -1,3 +1,8 @@
+body{
+    font-family:'Times New Roman', Times, serif;
+}
+
+
 .details{
     justify-content: space-between;
     display: flex;
@@ -12,6 +17,19 @@
     padding: 70px;
     text-align: center;
     align-items: center;
+}
+
+.techskillsDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-size: x-large;
+    
+    max-width: 200%;
+    padding: 10px;
+    margin: 10px 20px;
+    
 }
 
 .techeducation{
@@ -44,7 +62,7 @@
     color: rgb(159, 155, 155);
 }
 
-.technicalSkills img{
+/* .technicalSkills img{
     padding: 3px;
     background-color:white;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
@@ -52,21 +70,51 @@
     border-radius: 5px;
     width: 90px;
     height: 10vh;
-}
+} */
 
 .techskill{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .leftdetails{
-    padding: 4%;
-    margin-left: 3%;
-    padding-top: 12%;
+    padding: 70px 0px;
 }
 
+.typewriter {
+    font-weight: bold;
+    color: #FF4081;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid black; /* Cursor effect */
+    animation: typewriter 3s steps(20) infinite alternate, blink 800ms steps(20) infinite normal;
+}
+
+/* Typing Effect */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* Cursor Blink Effect */
+@keyframes blink {
+    from {
+        border-color: black;
+    }
+    to {
+        border-color: transparent;
+    }
+}
+
+
 .rightdetails{
-    margin-top: 5%;
+    padding: 130px 0px;
 }
 
 
@@ -92,10 +140,14 @@ button{
 }
 
 .myimg img{
+    width: 60%;
+    height: 70vh;
+    margin-left: 15%;
+}
+
+.leftdetails,
+ .rightdetails{
     width: 50%;
-    height: 55.5vh;
-    margin-left: 30%;
-    margin-top: 16%;
 }
 
 .smicons a{
